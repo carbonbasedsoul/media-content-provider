@@ -1,7 +1,5 @@
 # Media Content Provider DWH Design
 
----
-
 ## 1. Fact tables
 
 | Fact table | Granularity |
@@ -135,7 +133,6 @@
 - is_cancellation
 </details>
 
----
 
 ## 2. Dimension tables
 
@@ -272,7 +269,6 @@
 - is_current
 </details>
 
----
 
 ## 3. Bus matrix
 
@@ -288,7 +284,6 @@
 
 **Conformed dimensions:** Date, User, Geography, Tariff, Media_Content
 
----
 
 ## 4. Aggregate tables
 
@@ -313,7 +308,6 @@
 - total_sessions
 - completion_rate
 
----
 
 ## 5. Coverage of analytical requirements
 
@@ -349,7 +343,6 @@
 |-------------|--------|----------------|
 | Зловживання: споживання контенту одночасно з різних геолокацій | Fact_Media_Viewing, Dim_User, Dim_Profile | concurrent_locations_count, user_key, profile_key |
 
----
 
 ## 6. Design decisions
 
@@ -367,7 +360,6 @@
 
 **Aggregate tables pre-calculate frequently accessed metrics.** Monthly subscription snapshots and daily content statistics improve query performance for common analytical workloads while maintaining atomic detail in base fact tables.
 
----
 
 ## 7. Implementation notes
 
