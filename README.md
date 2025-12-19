@@ -1,5 +1,7 @@
 # Media Content Provider DWH Design
 
+[Interactive diagram](https://dbdiagram.io/e/694486be4bbde0fd74c29400/694494484bbde0fd74c313c2)
+
 ## 1. Fact tables
 
 | Fact table | Granularity |
